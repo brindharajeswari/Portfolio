@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brindha Rajeswari Portfolio</title>
+    <script defer src="script.js"></script>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/06c150889d.js" crossorigin="anonymous"></script>
 </head>
@@ -217,7 +218,7 @@
                     <h1 class="sub-title">Contact Me</h1>
                     <p><i class="fa-solid fa-paper-plane"></i>brindharajeswari@gmail.com</p>
                     <p><i class="fa-solid fa-phone"></i>+1(857)-971-0106</p>
-                    <p><i class="fa-solid fa-mailbox"></i>Farrington street, Arlington MA 02474</p>
+                    <!-- <p><i class="fa-solid fa-mailbox"></i>Farrington street, Arlington MA 02474</p> -->
 
                     <!-- <a href="images/Brindha Rajeswari Resume.docx" download class="btn btn2">Download Resume</a> -->
                 </div>
@@ -240,52 +241,6 @@
     <script src="https://unpkg.com/scrollreveal">
 
     </script>
-
-    <script>
-        var tablinks = document.getElementsByClassName("tab-links");
-        var tabcontents = document.getElementsByClassName("tab-contents");
-
-        function opentab(tabname) {
-            for (tablink of tablinks) {
-                tablink.classList.remove("active-link");
-            }
-            for (tabcontent of tabcontents) {
-                tabcontent.classList.remove("active-tab");
-            }
-            event.currentTarget.classList.add("active-link");
-            document.getElementById(tabname).classList.add("active-tab")
-        }
-    </script>
-
-    <script>
-        var sidemenu = document.getElementById("sidemenu");
-
-        function openmenu() {
-            sidemenu.style.right = "0";
-        }
-        function closemenu() {
-            sidemenu.style.right = "-200px";
-        }
-    </script>
-
-    <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbwF-VtTTEk6DWL26euY4VTAe8CQsRjSJhSaIYHfNqX3xJvUrfDPa7ZNNJLT9UjIyJhafQ/exec'
-        const form = document.forms['submit-to-google-sheet']
-        const msg = document.getElementById('msg')
-
-        form.addEventListener('submit', e => {
-            e.preventDefault()
-            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-                .then(response => {
-                    msg.innerHTML = "Message sent successfully"
-                    setTimeout(function () {
-                        msg.innerHTML = ""
-                    }, 5000)
-                    form.reset()
-                })
-                .catch(error => console.error('Error!', error.message))
-        })
-    </script>
     <script>
         const sr = ScrollReveal({
             distance: '45px',
@@ -296,6 +251,7 @@
         //    sr.reveal('.header-img',{delay:550, origin:'right'})
         // sr.reveal('#about,#services,#portfolio,#contact', { delay: 100, origin: 'bottom' })
     </script>
+
 </body>
 
 </html>
