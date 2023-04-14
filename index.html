@@ -18,7 +18,8 @@
                 <ul id="sidemenu">
                     <li> <a href="#header">Home</a></li>
                     <li> <a href="#about">About</a></li>
-                    <li> <a href="#services">Services</a></li>
+                    <!-- <li> <a href="#services">Services</a></li> -->
+                    <li> <a href="#services">Skills</a></li>
                     <li> <a href="#portfolio">Portfolio</a></li>
                     <li> <a href="#contact">Contact</a></li>
                     <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
@@ -64,17 +65,17 @@
                         a web developer and designer."
                     </p>
                     <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('skills')"> Skills</p>
+                        <!-- <p class="tab-links active-link" onclick="opentab('skills')"> Skills</p> -->
                         <p class="tab-links" onclick="opentab('experience')">Experience</p>
                         <p class="tab-links" onclick="opentab('education')"> Education</p>
                     </div>
-                    <div class="tab-contents active-tab" id="skills">
+                    <!-- <div class="tab-contents active-tab" id="skills">
                         <ul>
                             <li><span>Web Development</span><br>Designing web page</li>
                             <li><span>App Development</span><br>Building iOS app</li>
                             <li><span>Content creator</span><br>Youtuber</li>
                         </ul>
-                    </div>
+                    </div> -->
                     <div class="tab-contents" id="experience">
                         <ul>
                             <li><span>Feb 2016 - Present</span><br>Stay-at-Home Parent</li>
@@ -87,9 +88,9 @@
                     <div class="tab-contents" id="education">
                         <ul>
                             <li><span>Dec 2022 - April 2023</span><br>Software Engineering at Perscholas</li>
-                            <li><span>June 2022 - June 2023</span><br>English for Advancement at Jewish Vocational
+                            <li><span>June 2022 - June 2023</span><br>Advancement at Jewish Vocational
                                 service(JVS)</li>
-                            <li><span>Sept 2007 - April 2011 </span><br>Bachelor of Engineering at Anna University,
+                            <li><span>Sept 2007 - April 2011 </span><br>Bachelor of Engineering(Computer Science) at Anna University,
                                 Tirunelveli</li>
                         </ul>
                     </div>
@@ -99,7 +100,7 @@
     </div>
 
     <!-------------services------------------------->
-    <div id="services">
+    <!-- <div id="services">
         <div class="container">
             <h1 class="sub-title">My Services</h1>
             <div class="services-list">
@@ -140,7 +141,26 @@
 
             </div>
         </div>
+    </div> -->
+
+    <!-- --------------skill--------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Skills</h1>
+            <div class="services-list">
+              <div class=" lang">
+                    <img src="images/Languages.png" class="languages">
+                </div>
+                <div class="tools">
+                    <img src="images/Tools.png" class="languages">
+                </div>
+
+                
+
+            </div>
+        </div>
     </div>
+
 
     <!-- -----Portfolio---------- -->
     <div id="portfolio">
@@ -276,7 +296,7 @@
         })
         sr.reveal('.header-text', { delay: 350, origin: 'left' })
         //    sr.reveal('.header-img',{delay:550, origin:'right'})
-        sr.reveal('#about,#services,#portfolio,#contact', { delay: 100, origin: 'bottom' })
+        // sr.reveal('#about,#services,#portfolio,#contact', { delay: 100, origin: 'bottom' })
     </script>
 </body>
 
