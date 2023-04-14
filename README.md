@@ -1,5 +1,5 @@
 # Portfolio
-![js](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnhTjHhTBuOx6X-MIZtaz4U5bbp9hmvyHheXk8fHRKl1mhVbHxfVyzOMtWDJtXUZyULYc&usqp=CAU)
+![js](/images/html-css-javascript-png.png)
 
 # Introduction
 Welcome to my portfolio! This README file serves as a guide to help you navigate through my portfolio and learn more about me and my work.
