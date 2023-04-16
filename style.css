@@ -1,4 +1,4 @@
-*{
+ *{
     margin: 0;
     padding: 0;
     font-family: 'poppins', sans-serif;
@@ -9,14 +9,13 @@ html{
 }
 body{
     /* background:  plum; */
-    background: rgb(40, 30, 32);
-    /* background: black; */
+    /* background: rgb(40, 30, 32); */
+    background: #060a19;
     color: white;
 }
 #header{
     width: 100%;
     height: 100vh;
-    /* background-image: url(images/header.png); */
     background-size: cover;
     background-position: center;
 }
@@ -34,6 +33,18 @@ nav{
 
 .lap{
     width: 150px;
+    animation: slideRight 5s ease forwards;
+}
+
+@keyframes slideRight{
+    0%{
+        transform:translateX(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform:translateX(0);
+        opacity: 1;
+    }
 }
 
 nav ul li{
@@ -41,14 +52,27 @@ nav ul li{
     list-style: none;
     margin: 10px 20px;
     padding: 10px 27px;    
-    /* added */
 }
 
 nav ul li a{
     color: #fff;
     text-decoration: none;
+    display: inline-block;
     font-size: 18px;
     position: relative;
+    animation: slideTop 2s ease forwards;
+    animation-delay: calc(.2s * var(--i));
+}
+
+@keyframes slideTop{
+    0%{
+        transform:translateY(100px);
+        opacity: 0;
+    }
+    100%{
+        transform:translateY(0);
+        opacity: 1;
+    }
 }
 
 nav ul li a::after{
@@ -78,20 +102,91 @@ nav ul li a:hover::after{
     color: #ff007b;
 }
 
-.imghead{
-    width: 500px;
-    height: 500px;
+.header-img img{
+    width: 350px;
+    height: 350px;
+    margin-right: -20px;
+    top: 250px;
+    position: absolute;
+    left: 1050px;
+    border-radius: 205px;
+    animation: zoomIn 3s ease forwards, floatImage 4s ease-in-out infinite;
+    animation-delay: 2s, 3s;
 }
-.header-img{
-    flex-basis: 35%;
+@keyframes zoomIn{
+    0%{
+        transform:scale(0);
+        opacity: 0;
+    }
+    100%{
+        transform:scale(1);
+        opacity: 1;
+    }
 }
-.imghead{
-    width: 500px;
-    height: 500px;
-}
+/* @keyframes floatImage{
+    0%{
+        transform:translateY(0);  
+    }
+    50%{
+        transform:translateY(-25px);
+    }
+    100%{
+        transform:translateY(0);
+    }
+} */
 
 
-
+.multiple-text{
+    color: #ff007b;
+}
+/* ----typing animation---- */
+.wrapper{
+    display: inline-flex;
+}
+.wrapper .static-text{
+    color: #fff;
+    font-size: 50px;
+    font-weight: 400;
+}
+.wrapper .dynamic-text{
+    margin-left: 15px;
+    line-height: 80px;
+    height: 90px;
+    overflow: hidden;
+}
+.dynamic-text li{
+    color: #ff007b;
+    list-style: none;
+    font-size: 50px;
+    font-weight: 500;
+    position: relative;
+    top:0;
+    animation: slide 6s steps(3) infinte;
+}
+@keyframes slide{
+    100%{
+       top:-360px;
+    }
+}
+.dynamic-text li span{
+    position: relative;
+}
+.dynamic-text li span::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background:#fd91b8;
+    border-left: 2px solid #fd91b8;
+    animation: typing 1.5s steps(10) infinte;
+}
+@keyframes typing{
+    100%{
+        left:100%;
+        margin: 0 -35px 0 35px;
+    }
+}
 /* ---------about---------- */
 
 #about{
@@ -271,14 +366,14 @@ nav ul li a:hover::after{
     margin-top: 50px;
 }
 .work{
-    border-radius: 10px;
+    border-radius: 25px;
     position: relative;
     overflow: hidden;
 }
 .work img{
     width: 100%;
     height: 100%;
-    border-radius: 10px;
+    border-radius: 25px;
     display: block;
     transition: transform 0.5s;
 }
@@ -287,7 +382,7 @@ nav ul li a:hover::after{
     /* height: 100%; */
     height: 0;
     background: linear-gradient(rgba(216, 81, 176, 0.6), #68a8c8);
-    border-radius: 10px;
+    border-radius: 25px;
     position: absolute;
     left:0;
     bottom: 0;
@@ -383,6 +478,20 @@ nav ul li a:hover::after{
     color: #ff007b;
     display: inline-block;
     transition: transform 0.5s;
+    opacity: 0;
+    animation: slideLeft 2s ease forwards;
+    animation-delay: calc(.2s * var(--i));
+}
+
+@keyframes slideLeft{
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 .social-icons a:hover{
     color: #ff007b;
@@ -492,3 +601,6 @@ nav .fa-solid{
     margin-top: -40px;
     display: block;
 }
+
+/*  */
+

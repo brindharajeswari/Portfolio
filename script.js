@@ -1,12 +1,12 @@
 
-var tablinks = document.getElementsByClassName("tab-links");
-var tabcontents = document.getElementsByClassName("tab-contents");
+let tablinks = document.getElementsByClassName("tab-links");
+let tabcontents = document.getElementsByClassName("tab-contents");
 
 function opentab(tabname) {
-    for (tablink of tablinks) {
+    for (let tablink of tablinks) {
         tablink.classList.remove("active-link");
     }
-    for (tabcontent of tabcontents) {
+    for (let tabcontent of tabcontents) {
         tabcontent.classList.remove("active-tab");
     }
     event.currentTarget.classList.add("active-link");
@@ -45,3 +45,20 @@ form.addEventListener('submit', e => {
 
 
 
+let typed = new Typed(".multiple-text", {
+    strings: ["Full Stack Web Developer", "Youtuber", "Teacher", "Content creator"],
+    typeSpeed: 100,
+    backSpeed: 100,
+    backDelay: 1000,
+    loop: true
+})
+
+
+const sr = ScrollReveal({
+    distance: '45px',
+    duration: 2700,
+    reset: true
+})
+sr.reveal('.header-text', { delay: 350, origin: 'left' })
+        //    sr.reveal('.header-img',{delay:550, origin:'right'})
+        // sr.reveal('#about,#services,#portfolio,#contact', { delay: 100, origin: 'bottom' })

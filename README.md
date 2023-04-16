@@ -39,7 +39,7 @@ Here are some of my recent projects:
 
 - Project 1: MERN - Kids Craft App (Link - https://github.com/brindharajeswari/craft_App )
 
-- Project 2: REACT - Photo project with Pexel Api (Link - https://github.com/brindharajeswari/react_photo_project)
+- Project 2: REACT - Photo project with Pexel API (Link - https://github.com/brindharajeswari/react_photo_project)
 
 - Project 3: Javascript - TIC TAC TOE Game (Link - https://github.com/brindharajeswari/main-project)
 
