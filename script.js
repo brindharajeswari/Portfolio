@@ -15,7 +15,7 @@ function opentab(tabname) {
 
 
 
-var sidemenu = document.getElementById("sidemenu");
+let sidemenu = document.getElementById("sidemenu");
 
 function openmenu() {
     sidemenu.style.right = "0";
@@ -46,7 +46,7 @@ form.addEventListener('submit', e => {
 
 
 let typed = new Typed(".multiple-text", {
-    strings: ["Full Stack Web Developer", "Youtuber", "Teacher", "Content creator"],
+    strings: ["Full Stack Web Developer", "Youtuber", "Tamil Teacher", "Content creator"],
     typeSpeed: 100,
     backSpeed: 100,
     backDelay: 1000,

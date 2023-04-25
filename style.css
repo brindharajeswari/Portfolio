@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
  *{
     margin: 0;
     padding: 0;
     font-family: 'poppins', sans-serif;
+    /* font-family: 'Dancing Script', cursive; */
     box-sizing: border-box;
 }
 html{
@@ -10,14 +13,17 @@ html{
 body{
     /* background:  plum; */
     /* background: rgb(40, 30, 32); */
-    background: #060a19;
+    background: #090e25;
+    /* background: rgb(6, 6, 6); */
     color: white;
+    
 }
 #header{
     width: 100%;
     height: 100vh;
     background-size: cover;
     background-position: center;
+    /* background-image: url(images/bg.png); */
 }
 
 .container{
@@ -51,7 +57,8 @@ nav ul li{
     display: inline-block;
     list-style: none;
     margin: 10px 20px;
-    padding: 10px 27px;    
+    padding: 10px 27px;   
+    font-family: 'Dancing Script', cursive;
 }
 
 nav ul li a{
@@ -110,8 +117,8 @@ nav ul li a:hover::after{
     position: absolute;
     left: 1050px;
     border-radius: 205px;
-    animation: zoomIn 3s ease forwards, floatImage 4s ease-in-out infinite;
-    animation-delay: 2s, 3s;
+    /* animation: zoomIn 3s ease forwards, floatImage 4s ease-in-out infinite;
+    animation-delay: 2s, 3s; */
 }
 @keyframes zoomIn{
     0%{
@@ -218,6 +225,10 @@ nav ul li a:hover::after{
     font-weight: 600;
     color:#fff
 }
+
+.sub-title p{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
 .tab-titles{
     display: flex;
     margin: 20px 0 40px;
@@ -256,6 +267,14 @@ nav ul li a:hover::after{
 }
 .tab-contents.active-tab{
     display: block;
+}
+
+.social a{
+    text-decoration: none;
+    font-size: 20px;
+    margin-right: 5px;
+    color: #be1768;
+    display: inline-block;
 }
 
 /* -----skills----- */
@@ -399,6 +418,8 @@ nav ul li a:hover::after{
 .layer h2{
     font-weight: 500;
     margin-bottom: 20px;
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     color: black;
     text-decoration: underline;
 }
@@ -497,9 +518,10 @@ nav ul li a:hover::after{
     color: #ff007b;
     transform: translateY(-5px);
 }
-.btn.btn2{
+.btn .btn2{
     display: inline-block;
     color: #ff007b;
+    text-decoration: none;
 }
 .contact-right form{
     width: 100%;
@@ -515,16 +537,19 @@ form input, form textarea{
     font-size: 18px;
     border-radius: 6px;
 }
-form btn2{
-    padding: 14px 60px;
-    font-size: 18px;
-    margin-top: 20px;
-    cursor: pointer;
+form .btn2{
+    padding: 14px 30px;
+    font-size: 20px;
+    margin-top: 10px;
+    cursor:pointer;
+    color: #fff;
+    font-weight: 500;
+    background: #000;
 }
 .copyright{
     width: 100%;
     text-align: center;
-    padding:25px 0;
+    padding:15px 0;
     background: #ff007b;
     margin-top: 20px;
     font-weight: 300;
@@ -537,12 +562,10 @@ nav .fa-solid{
 }
 
 @media only screen and (max-width: 600px){
-    #header{
-        /* background-image: url(images/1.png); */
-    }
     .header-text{
         margin-top: 100%;
         font-size: 16px;
+        background-image: url(images/img.jpg);
     }
     .header-text h1{
         font-size: 30px;
